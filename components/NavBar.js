@@ -1,6 +1,5 @@
 'use client'
 
-
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -73,8 +72,8 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/beneficio"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/beneficio' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/productos"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname.startsWith('/productos') ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Productos</span>
 
@@ -139,8 +138,8 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/beneficio"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/beneficio' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/productos"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname.startsWith('/productos') ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Productos</span>
 

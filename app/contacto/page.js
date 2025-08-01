@@ -43,7 +43,7 @@ export default function Contacto() {
 
                                 <div>
                                     <p className='font-bold text-red-500 text-xl'>Teléfono</p>
-                                    <p>099 924 2919</p>
+                                    <p>099 507 1589</p>
                                 </div>
                             </div>
 
