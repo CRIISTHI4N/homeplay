@@ -1,7 +1,8 @@
 import MainLayout from '@/components/MainLayout'
-import Image from 'next/image'
-import "../styles/styles.css"
 import BrandCarousel from '../components/BrandCarousel'
+import Image from 'next/image'
+import Link from 'next/link'
+import "../styles/styles.css"
 
 export default function Home() {
   return (
@@ -31,10 +32,6 @@ export default function Home() {
           <a href="https://api.whatsapp.com/send?phone=593997518833&text=Hola%F0%9F%91%8B%20%2C%20deseo%20realizar%20un%20precredito%20para%20saber%20si%20puedo%20accerder%20a%20un%20cr%C3%A9dito.%20este%20es%20mi%20numero%20de%20c%C3%A9dula" target="_blank" rel="noopener noreferrer" className='p-1 hover:bg-red-500 transition-colors -skew-x-12'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp skew-x-12"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" /></svg>
           </a>
-
-          {/* <a href="https://www.instagram.com/somospayplay/" target="_blank" rel="noopener noreferrer" className='p-1 hover:bg-red-500 transition-colors -skew-x-12'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram skew-x-12"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg>
-          </a> */}
         </div>
 
       </section>
@@ -49,27 +46,24 @@ export default function Home() {
               Tecnología y <br /> <span className='text-red-500'>Hogar Inteligente</span>
             </p>
 
-            <p className='mt-10'>
-              Ofrecemos soluciones confiables en línea blanca y celulares,
+            <p className='mt-10'>Con nuestros planes de crédito, la innovación y la calidad están al alcance de tu mano.</p>
+            <p>
+              Ofrecemos soluciones confiables en línea blanca y celulares.
             </p>
-            <p>combinando innovación, calidad y el mejor servicio para tu día a día.</p>
 
             <div className='mt-5 flex items-center gap-1'>
-              <a
-                href="#footer"
+              <Link
+                href={'/contacto'}
                 className="block bg-red-500 w-fit py-2 px-4 -skew-x-12 hover:bg-gray-100 hover:text-gray-800 transition-colors"
               >
                 <span className='text-gray-800 font-bold -skew-x-12'>Contáctanos</span>
-              </a>
+              </Link>
 
               <span className='w-1 h-10 -skew-x-12 bg-red-500'></span>
 
             </div>
 
           </div>
-
-          {/* <div className="absolute hidden w-[300px] left-[50%] md:block -translate-x-[50%] top-[63%] md:w-[350px] md:top-[55%] lg:top-
-          [35%] lg:left-[55%] lg:translate-x-0 lg:w-[400px] xl:top-[50%] xl:-translate-y-[50%] xl:w-[500px] z-10"></div> */}
 
           <div className="absolute hidden w-[300px] left-[50%] md:block -translate-x-[50%] top-[63%] md:w-[350px] md:top-[55%] lg:top-[35%] lg:left-[55%] lg:translate-x-0 lg:w-[400px] xl:top-[50%] xl:-translate-y-[50%] xl:w-[500px] z-10 fade-in-slide">
             <Image
@@ -83,7 +77,46 @@ export default function Home() {
 
         </section>
 
-        <section className='w-[80%] m-auto my-10 text-gray-800 grid grid-cols-1 lg:grid-cols-4 gap-10 items-start'>
+        <section className='w-[80%] m-auto my-10 text-gray-800 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start'>
+
+          <article className='flex flex-col items-center justify-center gap-2 text-center '>
+
+            <span className='bg-red-500 p-5 -skew-x-12 relative before:content-[""] before:absolute before:right-[-8px] before:top-0 before:w-1 before:h-full before:bg-red-500'>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-20 text-gray-100 skew-x-12">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+              </svg>
+            </span>
+
+            <h2 className='text-red-500 font-semibold text-xl'>1. Solo presenta tu cédula</h2>
+          </article>
+
+          <article className='flex flex-col items-center justify-center gap-2 text-center '>
+
+            <span className='bg-red-500 p-5 -skew-x-12 relative before:content-[""] before:absolute before:right-[-8px] before:top-0 before:w-1 before:h-full before:bg-red-500'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-20 icon icon-tablertext-gray-100 skew-x-12 text-gray-100">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+            </span>
+
+            <h2 className='text-red-500 font-semibold text-xl'>2. Escoge tu celu favorito</h2>
+
+          </article>
+
+          <article className='flex flex-col items-center justify-center gap-2 text-center '>
+
+            <span className='bg-red-500 p-5 -skew-x-12 relative before:content-[""] before:absolute before:right-[-8px] before:top-0 before:w-1 before:h-full before:bg-red-500'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-20 text-gray-100 skew-x-12">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+              </svg>
+            </span>
+
+            <h2 className='text-red-500 font-semibold text-xl'>3. Llévatelo a casa en cuotitas semanales</h2>
+
+          </article>
+        </section>
+
+        {/* <section className='w-[80%] m-auto my-10 text-gray-800 grid grid-cols-1 lg:grid-cols-4 gap-10 items-start'>
 
           <article className='flex flex-col items-center justify-center gap-2 text-center '>
 
@@ -124,12 +157,10 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-supabase text-gray-100 skew-x-12"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 14h8v7l8 -11h-8v-7z" /></svg>
             </span>
 
-
-
             <div className='flex flex-col gap-2'>
-              <h2 className='text-red-500 font-semibold text-xl'>Tecnología siempre al día</h2>
+              <h2 className='text-red-500 font-semibold text-xl'>Presenta tu cédula</h2>
 
-              <p>Te ofrecemos productos actualizados con lo último en innovación y eficiencia.</p>
+              <p>Puedes acceder a nuestros productos, siempre actualizados con lo último en innovación y eficiencia.</p>
             </div>
 
           </article>
@@ -137,27 +168,28 @@ export default function Home() {
           <article className='flex flex-col items-center justify-center gap-2 text-center '>
 
             <span className='bg-red-500 p-5 -skew-x-12 relative before:content-[""] before:absolute before:right-[-8px] before:top-0 before:w-1 before:h-full before:bg-red-500'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-shield-lock text-gray-100 skew-x-12"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" /><path d="M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12l0 2.5" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-20 icon icon-tabler icons-tabler-outline icon-tabler-shield-lock text-gray-100 skew-x-12">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
             </span>
 
 
             <div className='flex flex-col gap-2'>
-              <h2 className='text-red-500 font-semibold text-xl'>Seguridad en cada compra</h2>
+              <h2 className='text-red-500 font-semibold text-xl'>Tu celu en menos de 30 minutos</h2>
 
-              <p>Tu información protegida y tus equipos respaldados con garantía real y soporte confiable.</p>
+              <p>Obtén la aprobación y el equipo que quieres.</p>
             </div>
 
           </article>
 
-        </section>
+        </section> */}
 
         <section className='w-full h-72 bg-[#131114] banner_dos flex items-center justify-center'>
           <div className='flex flex-col gap-7 lg:flex-row items-center justify-between w-[80%] m-auto'>
             <div>
-              <p className='font-bold text-xl lg:text-3xl'>Tecnología de punta <br /> a tu alcanze</p>
-              <p>En Home Play encuentras lo mejor en electrodomésticos y celulares de última generación.
-                Productos confiables, modernos y fáciles de usar, pensados para hacer tu vida más cómoda y conectada.
-                Sin complicaciones, sin procesos tediosos: solo enciende, disfruta y confía en nuestra calidad.</p>
+              <p className='font-bold text-xl lg:text-3xl'>Enciende, disfruta y paga a tu ritmo <br /> con nuestro crédito directo.</p>
+
+              <p>En Home Play encuentras lo mejor en electrodomésticos y celulares de última generación. Productos confiables, modernos y fáciles de usar, pensados para hacer tu vida más cómoda. Y lo mejor: sin complicaciones, ni procesos tediosos. </p>
             </div>
 
             <a
@@ -174,8 +206,7 @@ export default function Home() {
         <section className='text-gray-800 my-10 w-[80%] m-auto'>
           <h2 className='text-center text-3xl font-bold mb-5'>¿Por qué <span className='text-red-500'>Home play</span>?</h2>
 
-          <p className='text-center'>Tecnología confiable, asesoría personalizada y precios irresistibles.
-            En Home Play, te llevas lo mejor en línea blanca y celulares, con garantía y respaldo para que compres con total confianza..</p>
+          <p className='text-center'>No esperes más para estar siempre conectado con tus seres queridos. Llévate tu celu soñado hoy y págalo mientras lo usas en cuotitas semanales.</p>
 
           <span className='block w-[80%] lg:w-[50%] m-auto h-[2px] bg-red-500 mt-5'></span>
 
@@ -306,7 +337,32 @@ export default function Home() {
 
           <BrandCarousel />
         </section>
-      </MainLayout>
+
+        <section className='w-full bg-red-200 banner_dos flex items-center justify-center py-5'>
+          <Image
+            src={'/images/banner_celulares.png'}
+            width={500}
+            height={500}
+          />
+
+          <div className='flex flex-col gap-5'>
+            <p className='text-2xl'>
+              Elige tu celular soñado hoy y págalo mientras lo usas, <br />
+              con la comodidad de pequeñas cuotas semanales. <br />
+              Conéctate con tus seres queridos al instante.
+            </p>
+
+            <Link
+              href={'/productos'}
+              rel="noopener noreferrer"
+              className='bg-red-500 w-fit py-2 px-4 -skew-x-12 hover:bg-gray-100 hover:text-gray-800 transition-colors relative before:content-[""] before:absolute before:right-[-8px] before:top-0 before:w-1 before:h-full before:bg-red-500'
+            >
+              <span className='text-gray-100 font-bold -skew-x-12 text-nowrap'>Ver Productos</span>
+            </Link>
+          </div>
+
+        </section>
+      </MainLayout >
     </>
   );
 }
