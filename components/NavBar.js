@@ -64,15 +64,15 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/sobre-nosotros"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/sobre-nosotros' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/sobre-nosotros/"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/sobre-nosotros/' ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Sobre Nosotros</span>
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/productos"
+                            href="/productos/"
                             className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname.startsWith('/productos') ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Productos</span>
@@ -81,8 +81,8 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/contacto"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/contacto' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/contacto/"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/contacto/' ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Contacto</span>
 
@@ -130,15 +130,15 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/sobre-nosotros"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/sobre-nosotros' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/sobre-nosotros/"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/sobre-nosotros/' ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Sobre Nosotros</span>
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/productos"
+                            href="/productos/"
                             className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname.startsWith('/productos') ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Productos</span>
@@ -147,8 +147,8 @@ export default function NavBar() {
                     </li>
                     <li>
                         <Link
-                            href="/contacto"
-                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/contacto' ? 'bg-[#2c2c2c]' : ''}`}
+                            href="/contacto/"
+                            className={`block leading-none -skew-x-12 hover:bg-[#2c2c2c] transition-colors py-2 px-3 font-semibold ${pathname === '/contacto/' ? 'bg-[#2c2c2c]' : ''}`}
                         >
                             <span className='block skew-x-12 leading-none'>Contacto</span>
 

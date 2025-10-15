@@ -15,7 +15,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Home Play",
   description: "Tecnología y Hogar Inteligente",
-  icons: '/images/logo.jpeg'
+  icons: '/images/logo-sin-fondo.png'
 };
 
 export default function RootLayout({ children }) {
